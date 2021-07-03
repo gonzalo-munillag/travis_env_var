@@ -1,4 +1,4 @@
-const docker_username_value = process.env.DOCKER_USERNAME;
+const my_name = process.env.NAME;
 
 
 function sleep(ms) {
@@ -7,7 +7,7 @@ function sleep(ms) {
 
 async function main() {
   while(true) {
-    console.log(`My docker user name is ${docker_username_value}`);
+    console.log(`I am ${my_name}`);
     await sleep(5000);
   }
 }
